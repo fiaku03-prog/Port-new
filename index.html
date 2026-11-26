@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Finza Dwi Kirana</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FFCC00',
+                            red: '#D91B1B',
+                            dark: '#1E1E24',
+                            wood: '#8B4513',
+                            accent: '#2563EB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-amber-50 text-slate-800 font-sans selection:bg-brand-yellow selection:text-black">
+
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-stone-900/90 backdrop-blur-md text-white border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <span class="bg-brand-yellow text-slate-900 font-heading font-black text-xl px-3 py-1 rounded-lg">FDK</span>
+                    <span class="font-bold text-lg tracking-wide hidden sm:inline">Finza Dwi Kirana</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                        <a href="#hero" class="nav-link hover:text-brand-yellow transition-colors">Beranda</a>
+                        <a href="#tentang" class="nav-link hover:text-brand-yellow transition-colors">Tentang</a>
+                        <a href="#keahlian" class="nav-link hover:text-brand-yellow transition-colors">Keahlian</a>
+                        <a href="#organisasi" class="nav-link hover:text-brand-yellow transition-colors">Pengalaman</a>
+                        <a href="#kompetisi" class="nav-link hover:text-brand-yellow transition-colors">Prestasi</a>
+                        <a href="#galeri" class="nav-link text-brand-yellow font-bold hover:underline">Proyek Portofolio</a>
+                        <a href="#kontak" class="nav-link hover:text-brand-yellow transition-colors">Kontak</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button id="menu-btn" class="md:hidden text-2xl text-white w-10 h-10" aria-label="Buka menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                    <a href="https://drive.google.com/file/d/1gmuG13aYQiG6oNoZTpKaUSZzg8b1Swfi/view?usp=sharing" target="_blank" class="bg-brand-yellow text-slate-900 font-bold px-4 py-2 rounded-full text-xs uppercase tracking-wider hover:bg-yellow-400 transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf"></i> PDF Portofolio
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-stone-900 border-t border-amber-500/20">
+            <div class="px-4 py-3 flex flex-col gap-1 text-sm font-medium">
+                <a href="#hero" class="py-2 hover:text-brand-yellow">Beranda</a>
+                <a href="#tentang" class="py-2 hover:text-brand-yellow">Tentang</a>
+                <a href="#keahlian" class="py-2 hover:text-brand-yellow">Keahlian</a>
+                <a href="#organisasi" class="py-2 hover:text-brand-yellow">Pengalaman</a>
+                <a href="#kompetisi" class="py-2 hover:text-brand-yellow">Prestasi</a>
+                <a href="#galeri" class="py-2 text-brand-yellow font-bold">Proyek Portofolio</a>
+                <a href="#kontak" class="py-2 hover:text-brand-yellow">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Inspired by Page 1 Cover) -->
+    <section id="hero" class="min-h-screen pt-24 pb-12 flex items-center justify-center wood-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <div class="inline-block bg-brand-yellow p-8 sm:p-14 rounded-3xl shadow-2xl border-4 border-amber-300 transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <h2 class="text-amber-900 font-extrabold text-2xl sm:text-3xl tracking-widest uppercase mb-2">PORTOFOLIO DESAIN</h2>
+                <h1 class="text-slate-950 font-heading font-black text-4xl sm:text-7xl uppercase tracking-tighter leading-none mb-4">
+                    FINZA DWI KIRANA
+                </h1>
+                <p class="text-amber-950 font-semibold text-base sm:text-xl max-w-xl mx-auto">
+                    Graphic Designer • Digital Creator • S1 Bisnis Digital & Lulusan DKV
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="#galeri" class="bg-brand-red text-white font-bold px-6 py-3 rounded-xl hover:bg-red-700 transition shadow-lg flex items-center gap-2">
+                        Lihat Proyek <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#tentang" class="bg-slate-900 text-white font-bold px-6 py-3 rounded-xl hover:bg-slate-800 transition shadow-lg">
+                        Tentang Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA & PROFIL (Page 2 & Page 4) -->
+    <section id="tentang" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase">Perkenalan</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 mt-1">TENTANG SAYA</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Photo frame matching PDF Red Frame style -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative p-4 bg-brand-yellow rounded-3xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-300">
+                        <div class="bg-brand-red p-3 rounded-2xl stitch-border">
+                            <!-- Placeholder avatar / image frame -->
+                            <div class="w-64 h-80 sm:w-72 sm:h-96 rounded-xl overflow-hidden bg-slate-800 flex flex-col items-center justify-center text-white p-6 text-center shadow-inner relative">
+                                <i class="fa-solid fa-user-ninja text-7xl text-brand-yellow mb-4"></i>
+                                <span class="font-bold text-xl">Finza Dwi Kirana</span>
+                                <span class="text-xs text-amber-200 mt-1">DKV SMK N 1 Kebumen & S1 Bisnis Digital</span>
+                                <div class="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur text-[10px] py-1 rounded">
+                                    Kebumen, Jawa Tengah
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="glass-card p-6 rounded-2xl shadow-md border-l-8 border-brand-yellow">
+                        <h3 class="font-bold text-xl text-slate-900 mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-id-card text-amber-600"></i> Profil Singkat
+                        </h3>
+                        <p class="text-slate-700 leading-relaxed">
+                            Saya adalah pribadi yang kreatif, disiplin, bertanggung jawab, dan memiliki semangat belajar yang tinggi. Lulusan SMK Jurusan <b>Desain Komunikasi Visual (DKV)</b> dan saat ini merupakan mahasiswa aktif <b>S1 Bisnis Digital</b>. Memiliki pengalaman sekitar 6 tahun dalam menggunakan Adobe Illustrator serta memiliki minat pada desain grafis, editing, digital branding, dan pengembangan bisnis kreatif.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="text-brand-red font-bold text-lg mb-1"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</div>
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• <b>SMK Negeri 1 Kebumen</b> (DKV - Lulus 2026)</li>
+                                <li>• <b>Universitas Putra Bangsa</b> (S1 Bisnis Digital)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="text-amber-600 font-bold text-lg mb-1"><i class="fa-solid fa-bullseye"></i> Tujuan Karier</div>
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Menjadi Graphic Designer Profesional</li>
+                                <li>• Menjadi Content Creator yang Sukses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-100/60 p-5 rounded-2xl border border-amber-300">
+                        <div class="font-bold text-slate-800 text-sm mb-2"><i class="fa-solid fa-trophy text-amber-600"></i> Highlight Prestasi Terkini:</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-amber-400 text-slate-900 text-xs px-3 py-1.5 rounded-full font-bold">Juara 1 LKS Desain Grafis Kebumen 2026</span>
+                            <span class="bg-amber-400 text-slate-900 text-xs px-3 py-1.5 rounded-full font-bold">Top 5 LKS Desain Grafis Prov. Jateng 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGUASAAN SOFTWARE & KEAHLIAN (Page 5) -->
+    <section id="keahlian" class="py-20 wood-bg text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand-yellow font-bold text-sm tracking-widest uppercase">Skill & Software</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">PENGUASAAN SOFTWARE</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Software Skill Bars inspired by Page 5 Chart -->
+            <div class="bg-slate-900/80 backdrop-blur p-8 rounded-3xl border border-amber-500/30 shadow-2xl">
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 text-center">
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 90%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">90%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-amber-400">Ai</span>
+                            <p class="text-[10px] text-slate-300">Illustrator</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 85%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">85%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-blue-400">Canva</span>
+                            <p class="text-[10px] text-slate-300">Design</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 80%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">80%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-slate-200">CapCut</span>
+                            <p class="text-[10px] text-slate-300">Video</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 80%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">80%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-purple-400">Figma</span>
+                            <p class="text-[10px] text-slate-300">UI/UX</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 75%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">75%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-green-400">Snapseed</span>
+                            <p class="text-[10px] text-slate-300">Editing</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 70%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">70%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-pink-400">Id</span>
+                            <p class="text-[10px] text-slate-300">InDesign</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 60%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">60%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-blue-400">Ps</span>
+                            <p class="text-[10px] text-slate-300">Photoshop</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-full bg-slate-800 rounded-t-xl h-48 flex items-end justify-center p-2 relative">
+                            <div class="skill-bar bg-blue-600 w-full rounded-t-lg" style="height: 40%;"></div>
+                            <span class="absolute top-2 font-black text-amber-300 text-sm">40%</span>
+                        </div>
+                        <div class="bg-amber-950/80 w-full p-2 rounded-b-xl border-t border-amber-600/40">
+                            <span class="font-extrabold text-purple-300">Ae</span>
+                            <p class="text-[10px] text-slate-300">After Effect</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN ORGANISASI (Pages 6, 7, 8) -->
+    <section id="organisasi" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase">Jejak Langkah</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 mt-1">PENGALAMAN ORGANISASI</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- SMP -->
+                <div class="bg-white rounded-2xl shadow-lg border-t-4 border-amber-500 overflow-hidden">
+                    <div class="bg-amber-50 p-4 border-b border-amber-100">
+                        <span class="text-xs font-bold text-amber-700 uppercase">SMP N 6 Kebumen</span>
+                        <h3 class="font-bold text-lg text-slate-900">Ketua PMR (2020 - 2021)</h3>
+                    </div>
+                    <div class="p-6 text-sm text-slate-600 space-y-2">
+                        <p>• Memimpin & mengoordinasikan seluruh kegiatan PMR.</p>
+                        <p>• Memimpin rapat rutin, evaluasi, dan penyusunan program kerja.</p>
+                        <p>• Menjadi penghubung antara anggota, pembina PMR, dan pihak sekolah.</p>
+                    </div>
+                </div>
+
+                <!-- SMK -->
+                <div class="bg-white rounded-2xl shadow-lg border-t-4 border-brand-red overflow-hidden">
+                    <div class="bg-red-50 p-4 border-b border-red-100">
+                        <span class="text-xs font-bold text-brand-red uppercase">SMK N 1 Kebumen</span>
+                        <h3 class="font-bold text-lg text-slate-900">Humas & Sie Produksi</h3>
+                    </div>
+                    <div class="p-6 text-sm text-slate-600 space-y-3">
+                        <div>
+                            <span class="font-bold text-slate-800">1. Humas Teater (2024-2025):</span>
+                            <p class="text-xs">Mengelola medsos, desain poster/iklan, video editing, dan konten.</p>
+                        </div>
+                        <div>
+                            <span class="font-bold text-slate-800">2. Sie Produksi Cemara Films (2024-2025):</span>
+                            <p class="text-xs">Cameramen, video editor, desainer poster film, dan manajemen alat produksi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Universitas -->
+                <div class="bg-white rounded-2xl shadow-lg border-t-4 border-blue-600 overflow-hidden">
+                    <div class="bg-blue-50 p-4 border-b border-blue-100">
+                        <span class="text-xs font-bold text-blue-600 uppercase">Universitas Putra Bangsa</span>
+                        <h3 class="font-bold text-lg text-slate-900">Divisi PDD (Saat Ini)</h3>
+                    </div>
+                    <div class="p-6 text-sm text-slate-600 space-y-3">
+                        <div>
+                            <span class="font-bold text-slate-800">1. Divisi PDD Bi-fest (2026-2027):</span>
+                            <p class="text-xs">Desain media sosial, ide konten, pembuatan video & editing.</p>
+                        </div>
+                        <div>
+                            <span class="font-bold text-slate-800">2. Divisi PDD Kebumen Campus Fest (2026-2027):</span>
+                            <p class="text-xs">Perancangan berbagai atribut visual dan media promosi acara.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN BERKOMPETISI (Page 9) -->
+    <section id="kompetisi" class="py-20 bg-amber-50/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase">Penghargaan</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 mt-1">PENGALAMAN BERKOMPETISI</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- SMP Competitions -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold">SMP</div>
+                        <h3 class="font-bold text-slate-800">Tingkat SMP</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-award text-amber-500 mt-1"></i>
+                            <span>Peserta Olimpiade IPS Tingkat Nasional 2022</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-award text-amber-500 mt-1"></i>
+                            <span>Peringkat 5 Olimpiade PMR Tingkat Kab. Kebumen 2022</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                            <span>Uji Kecakapan PMR (Predikat Baik)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SMK Competitions -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-brand-yellow">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center text-slate-900 font-bold">SMK</div>
+                        <h3 class="font-bold text-slate-800">Tingkat SMK (DKV)</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2 font-semibold text-slate-900">
+                            <i class="fa-solid fa-trophy text-amber-500 mt-1"></i>
+                            <span>Juara 1 LKS Graphic Design Technology Kab. Kebumen 2026</span>
+                        </li>
+                        <li class="flex items-start gap-2 font-semibold text-slate-900">
+                            <i class="fa-solid fa-medal text-amber-600 mt-1"></i>
+                            <span>Top 5 LKS Graphic Design Technology Prov. Jateng 2026</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-medal text-slate-400 mt-1"></i>
+                            <span>Peringkat 5 LKS Graphic Design Kab. Kebumen 2025</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-trophy text-amber-500 mt-1"></i>
+                            <span>Juara 2 Video Inovasi Pemuda Jambore Kab. Kebumen 2024</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Perguruan Tinggi -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold">UPB</div>
+                        <h3 class="font-bold text-slate-800">Tingkat Perguruan Tinggi</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-pen-nib text-purple-600 mt-1"></i>
+                            <span>Penulis Terpilih Lomba Cipta Puisi Nasional 2026 (CV. Simpel Publisher)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-palette text-blue-500 mt-1"></i>
+                            <span>Peserta Lomba Desain Poster Bulan Pemuda (Sinergi Pemuda Jakarta & BanyakBaca.ID)</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI PORTOFOLIO (Hanya Menampilkan Tekst Saja & Tombol Unduh PDF) -->
+    <section id="galeri" class="py-20 wood-bg text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand-yellow font-bold text-sm tracking-widest uppercase">Kumpulan Karya</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">GALERI PORTOFOLIO PROYEK</h2>
+                <p class="text-amber-200 text-sm max-w-xl mx-auto mt-2">Daftar inventaris karya dan proyek desain yang telah diselesaikan oleh Finza Dwi Kirana.</p>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- List Kategori Proyek Berbasis Teks -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Kategori 1: Desain Logo -->
+                <div class="bg-slate-900/90 backdrop-blur p-6 rounded-2xl border border-amber-500/30">
+                    <h3 class="text-xl font-bold text-brand-yellow border-b border-slate-700 pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-vector-square"></i> 1. Desain Logo Branding
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• <b class="text-white">RESEBER</b> (Remaja Seling Bersatu)</li>
+                        <li>• <b class="text-white">Aba Muslim</b> (Wedding Planner)</li>
+                        <li>• <b class="text-white">Elysian</b> (Wedding Stylist)</li>
+                        <li>• <b class="text-white">Cipta IT & Koneroe</b></li>
+                        <li>• <b class="text-white">Chickroll</b> (Crispy Chicken Logo)</li>
+                        <li>• <b class="text-white">DEE-S</b> (Cafe & Karaoke Family)</li>
+                        <li>• <b class="text-white">Teman Tanaman & Nenyap</b></li>
+                        <li>• <b class="text-white">Gen3 Solid & Logo 81 Th Jawa Tengah</b></li>
+                        <li>• <b class="text-white">Logo 397 Th Kabupaten Kebumen</b></li>
+                        <li>• <b class="text-white">Homestead, Dimus, Pastry & Rice Bowl</b></li>
+                        <li>• <b class="text-white">Craft Fest, Finz Art Fest, Bright Minds, Campus Stories</b></li>
+                    </ul>
+                </div>
+
+                <!-- Kategori 2: Visual Branding & Guideline -->
+                <div class="bg-slate-900/90 backdrop-blur p-6 rounded-2xl border border-amber-500/30">
+                    <h3 class="text-xl font-bold text-brand-yellow border-b border-slate-700 pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-copyright"></i> 2. Visual Branding & Guidelines
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• <b class="text-white">Branding 81 th Jawa Tengah:</b> Keris & Batik motif, color palette, typography & merchandise mockup.</li>
+                        <li>• <b class="text-white">Branding 397 th Kabupaten Kebumen:</b> Logo grid, warna & penerapan identitas visual.</li>
+                        <li>• <b class="text-white">Kopi Senja & Chikzo:</b> Identitas kemasan dan promosi produk.</li>
+                        <li>• <b class="text-white">Pastry Bakery:</b> Packaging box, paperbag, dan pattern visual.</li>
+                        <li>• <b class="text-white">Galeri Seni Rupa Rajamala Surakarta:</b> Banner, HTM Ticket & Spanduk visual.</li>
+                        <li>• <b class="text-white">Branding Produk Lanjutan:</b> Kuku Lavender, Velgra, CrispyGO, Moci & Rooty.</li>
+                    </ul>
+                </div>
+
+                <!-- Kategori 3: Poster & AI Vektor -->
+                <div class="bg-slate-900/90 backdrop-blur p-6 rounded-2xl border border-amber-500/30">
+                    <h3 class="text-xl font-bold text-brand-yellow border-b border-slate-700 pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-image"></i> 3. Poster Design & AI Vektor
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• <b class="text-white">Poster Vektor AI:</b> "Jangan Mau Di-Stir AI" (Illustrator Vector Artwork).</li>
+                        <li>• <b class="text-white">Poster Sumpah Pemuda:</b> Vektor Tokoh Pemuda & Semangat Membara.</li>
+                        <li>• <b class="text-white">Poster Komersial:</b> Chickroll Japanese Kata & Salty Chizu Menu.</li>
+                        <li>• <b class="text-white">Poster Layanan & Edukasi:</b> IKN Kota Cerdas, Sedekah Bumi, Lestarikan Satwa Sumatera, Hidup Sehat & Stop Kecanduan Gadget.</li>
+                        <li>• <b class="text-white">Poster Promosi Skincare:</b> Hanasui Power Serum Budget Pelajar.</li>
+                    </ul>
+                </div>
+
+                <!-- Kategori 4: UI/UX, Maskot, Video & Microstock -->
+                <div class="bg-slate-900/90 backdrop-blur p-6 rounded-2xl border border-amber-500/30">
+                    <h3 class="text-xl font-bold text-brand-yellow border-b border-slate-700 pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group"></i> 4. UI/UX, Maskot, Video & Microstock
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• <b class="text-white">UI/UX Figma Design:</b> Mobile App Design "Teman Tanaman", Event Booking, & E-commerce tools.</li>
+                        <li>• <b class="text-white">Maskot Character Design:</b> Mascot Burung Blue Robot, Ayam Chickroll, Pisang Cute, Robot AI Office & Jam Waktu.</li>
+                        <li>• <b class="text-white">Video Editing & Dokumenter:</b>
+                            <br>&nbsp;&nbsp;- Video Perpisahan SD Negeri 2 Wonosari 2024/2025
+                            <br>&nbsp;&nbsp;- Video Ucapan HUT SMK N 1 Kebumen Ke-59
+                            <br>&nbsp;&nbsp;- Video Dokumenter "Batik Sekar Jagad" (Juara 2 Video Jambore)
+                        </li>
+                        <li>• <b class="text-white">Microstock Contributor:</b> Adobe Stock, Canva Contributor (10RB+ Aset), Shutterstock Contributor.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- SECTION TOMBOL UNDUH PDF PORTOFOLIO (Sesuai Permintaan) -->
+            <div class="mt-16 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 p-8 rounded-3xl text-center text-slate-900 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <i class="fa-solid fa-file-pdf text-6xl text-slate-950 mb-4 animate-bounce"></i>
+                    <h3 class="font-heading font-black text-2xl sm:text-3xl uppercase tracking-tight mb-2">Ingin Melihat Visual Lengkap Dokumen PDF?</h3>
+                    <p class="text-slate-800 text-sm font-medium mb-6">
+                        Anda dapat mengunduh atau membuka berkas lengkap PDF Portofolio Finza Dwi Kirana (27 Halaman berisi gambar high-resolution dari seluruh karya di atas).
+                    </p>
+                    
+                    <!-- Link Download PDF Google Drive -->
+                    <a href="https://drive.google.com/file/d/1gmuG13aYQiG6oNoZTpKaUSZzg8b1Swfi/view?usp=sharing" target="_blank" 
+                       class="inline-flex items-center gap-3 bg-slate-950 text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-2xl hover:bg-slate-800 transition-all shadow-xl hover:scale-105 transform">
+                        <i class="fa-solid fa-download text-brand-yellow"></i>
+                        UNDUH PDF PORTOFOLIO
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- KONTAK & FOOTER (Page 3) -->
+    <footer id="kontak" class="bg-stone-900 text-white py-16 border-t border-amber-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl font-heading font-black text-brand-yellow mb-4">MARI BEKERJA SAMA!</h2>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Terbuka untuk kesempatan kerja lepas (freelance), proyek desain grafis, branding, editing video, maupun kolaborasi bisnis kreatif.
+                    </p>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-yellow"></i>
+                            <span>finzadwikirana123@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-yellow"></i>
+                            <span>Kebumen, Jawa Tengah, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700">
+                    <h3 class="font-bold text-lg text-white mb-4"><i class="fa-solid fa-share-nodes text-brand-yellow"></i> Media Sosial</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <a href="https://instagram.com" target="_blank" class="p-3 bg-stone-700/50 rounded-xl hover:bg-stone-700 transition flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-pink-500 text-base"></i> finza_dwikirana
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="p-3 bg-stone-700/50 rounded-xl hover:bg-stone-700 transition flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-pink-400 text-base"></i> finza_graphicdesign_pemula
+                        </a>
+                        <a href="#" class="p-3 bg-stone-700/50 rounded-xl hover:bg-stone-700 transition flex items-center gap-2">
+                            <i class="fa-brands fa-tiktok text-white text-base"></i> finza_dwi_kirana
+                        </a>
+                        <a href="#" class="p-3 bg-stone-700/50 rounded-xl hover:bg-stone-700 transition flex items-center gap-2">
+                            <i class="fa-brands fa-youtube text-red-500 text-base"></i> finzadwikirana
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-stone-800 mt-12 pt-6 text-center text-xs text-slate-500">
+                <p>© 2026 Finza Dwi Kirana. All rights reserved. Desain portofolio terinspirasi dari PDF asli.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
